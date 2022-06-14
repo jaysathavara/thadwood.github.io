@@ -1,0 +1,101 @@
+@import url(/assets/css/index.css);
+.product-contact{
+    background-color: #4E9F3D;
+    padding: 10px;
+  
+    display: flex;
+    justify-content: space-around;
+}
+.product-contact a{
+    color: var(--secondary-color);
+}
+.navbar{
+    z-index: 10000;
+    background-color: #fff;
+    position: static;
+}
+.navbar .menu li a{
+    color: #000;
+}
+.navbar .menu li:hover a{
+    color: #4E9F3D;
+}
+.navbar .menu li:nth-child(2) a{
+    color: #4E9F3D;
+}
+/* hero */
+.product-hero img{
+    height: 50vh;
+    
+    position: relative;
+  
+    object-fit: cover;
+    opacity: 0.7;
+  
+    
+}
+.product-hero{
+    position: relative;
+
+}
+.product-hero h2{
+    z-index: 100000;
+    position: absolute;
+    font-size: 4rem;
+    top: 50%;
+    color: #4E9F3D;
+    font-family: var(--primary-font);
+    letter-spacing: 2px;
+    padding: 70px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+/* products */
+.products{
+    padding: 20px;
+    margin: 50px 0;
+}
+.products h2{
+    text-align: center;
+    font-family: var(--primary-font);
+    letter-spacing: 2px;
+    font-size: 2rem;
+    border: 3px dotted #4E9F3D;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    padding: 10px;
+    transform: translate(-50%);
+}
+.product-container img{
+    /* width: 80% !important; */
+  
+    height: 500px;
+}
+.product-container figcaption{
+    text-align: center;
+    margin: 5px 0;
+    font-size: 1.1rem;
+    font-family: var(--primary-font);
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.product-container{
+    padding: 20px;
+    margin: 60px 0;
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.product-container .product-1,.product-2,.product-3,.product-4,.product-5,.product-6,.product-7,.product-8{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    cursor: pointer;
+    margin: 30px 0;
+
+}
+.product-container .product-1:hover,.product-2:hover,.product-3:hover,.product-4:hover,.product-5:hover,.product-6:hover,.product-7:hover,.product-8:hover{
+   transform: translateY(-10px);
+   transition: all 0.5s;
+
+}

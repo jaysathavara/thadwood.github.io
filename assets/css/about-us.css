@@ -1,0 +1,157 @@
+@import url(/assets/css/index.css);
+.product-contact{
+    background-color: #4E9F3D;
+    padding: 10px;
+    position: fixed;
+    z-index: 1000;
+  width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.product-contact a{
+    color: var(--secondary-color);
+}
+.navbar{
+    margin: 30px 0;
+}
+.navbar .menu li a{
+    color: var(--wood-color);
+    font-weight: bold;
+
+}
+.navbar .menu li:hover a{
+    color:  #4E9F3D;
+
+}
+.navbar .menu li:nth-child(3) a{
+    color: #4E9F3D;
+}
+.navbar.sticky{
+    padding: 5px 100px;
+    background-color: #fff;
+}
+.navbar.sticky ul li a{
+    color: #000;
+}
+.navbar.sticky ul li:hover a{
+    color: var(--primary-color);
+}
+.navbar.sticky select{
+    color: #000;
+}
+/* main */
+.about-hero img{
+    height: 100vh;
+    /* position: relative; */
+    object-fit: cover;
+}
+.about-hero{
+    position: relative;
+}
+.about-hero h2{
+    position: absolute;
+    left: 50%;
+    font-size: 3rem;
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    top: 50%;
+    letter-spacing: 2px;
+    transform: translate(-50%,-50%);
+}
+h2 span{
+    color: var(--wood-color);
+}
+h3{
+    position: absolute;
+    left: 50%;
+    font-size: 2rem;
+    font-family: var(--primary-font);
+    color: var(--wood-color);
+    top: 60%;
+    letter-spacing: 2px;
+    transform: translate(-50%,-50%);
+}
+h3 span{
+    color: var(--primary-color);
+}
+/* about-us section */
+.about-us ol li{
+    list-style: decimal;
+    list-style:circle;
+    font-size: 18px;
+    font-family: var(--primary-font);
+    letter-spacing: 1px;
+
+}
+.about-us{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.about-us .left p{
+    font-size: 1.2rem;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about-us .left{
+ display: flex;
+ flex-direction: column;
+ row-gap: 30px;
+}
+.about-us h2{
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+}
+.about-us .right img{
+    width: 400px !important;
+    height: 450px;
+
+   
+}
+.about-us .right{
+    margin: 50px 0;
+   display: flex;
+   justify-content: flex-end;
+}
+/* about-us plans */
+.about-us-plans{
+    font-family: var(--primary-font);
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 20px;
+}
+.about-us-plans .vision h2,.mission h2,.values h2{
+    border-bottom: 4px solid var(--wood-color);
+    padding: 0 0 10px;
+    display: block;
+}
+.about-us-plans .vision p,.mission p,.values p{
+    margin-top: 40px;
+   
+}
+.about-us-plans span{
+    color: #4E9F3D;
+}
+/* photo */
+.photo-1{
+    display:flex ;
+    padding: 50px;
+    
+}
+.photo-1 img{
+    height: 500px;
+    width: 50% !important;
+    object-fit: cover;
+}
+.photo-2{
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px;
+}
+.photo-2 img{
+    height: 500px;
+    width: 50% !important;
+    object-fit: cover;
+}

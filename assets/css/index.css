@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*,*::before,*::after{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+img{
+    width: 100% !important;
+    display: block;
+}
+body{
+    overflow-x: hidden;
+    max-width: 100%;
+    min-height: 200vh;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --primary-color: rgb(180,214,34);
+    --secondary-color: #fff;
+    --wood-color:rgb(111,92,82);
+    --font-weight:400;
+    --primary-font:'Oswald', sans-serif;
+}
+
+.main-logo{
+    width: 100px;
+    height: 100px;
+    left: 0;
+  
+}
+.navbar{
+    position: fixed;
+    display: flex;
+    
+
+    align-items: center;
+    padding: 20px 30px;
+    justify-content: center;
+   z-index: 10000;
+    width: 100%;
+}
+.navbar.sticky{
+    padding: 5px 100px;
+    background-color: #fff;
+}
+.navbar.sticky ul li a{
+    color: #000;
+}
+.navbar.sticky ul li:hover a{
+    color: var(--primary-color);
+}
+.navbar.sticky select{
+    color: #000;
+}
+.menu{
+    display: flex;
+   
+}
+.menu li{
+    position: relative
+}
+.menu {
+    position: relative;
+}
+.menu li a{
+    margin: 0 0.9rem;
+    font-weight: var(--font-weight);
+    font-family: var(--primary-font);
+    color: var(--secondary-color);
+    letter-spacing: 2px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.menu li:first-child a{
+    color: var(--primary-color);
+}
+.menu li:hover a{
+    transition: all 0.5s;
+    color: var(--primary-color);
+}
+
+
+/* main  */
+.hero .hero-1 .hero-img-1 img{
+    height: 100vh;
+    
+    position: relative;
+    object-fit: cover;
+}
+.hero .hero-1 .hero-text-1 h1{
+    
+    color: peru;
+    text-align: center;
+    font-size: 5rem;
+
+}
+.hero .hero-1 .hero-text-1 span{
+    color: var(--primary-color);
+    
+}
+.hero .hero-1 .hero-text-1 p{
+  text-align: center;
+  color: peru;
+  font-size: 2rem;  
+}
+.hero .hero-1 .hero-text-1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+/* about section */
+.about-section{
+    margin: 5rem 0;
+}
+.about-section img{
+    width: 50px !important;
+    display: inline !important;
+    height: 50px;
+    transform: rotate(-30deg);
+}
+.about-section h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+}
+.about-section p{
+   text-align: start;
+   width: 60vw;
+   line-height: 1.5;
+   font-family: var(--primary-font);
+   padding: 20px;
+   font-size: 1.1rem;
+
+}
+.about-section:last-child p{
+    margin-top: 1rem;
+}
+.about-section .aboutus-img img{
+    width: 30vw !important;
+    height: 500px;
+    transform: rotate(0deg);
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    bottom: -600px;
+}
+.about-section .read-more{
+    padding: 20px;
+}
+.about-section .read-more button{
+    font-family: var(--primary-font);
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    color: var(--wood-color);
+    font-weight: var(--font-weight);
+    padding: 10px 40px ;
+    cursor: pointer;
+    border-color: var(--primary-color);
+}
+
+/* wood venners section-2 */
+.wood-veneers{
+    margin: 15rem 0;
+    position: relative;
+    
+  
+}
+.wood-venner-text{
+    background-color: #E5E5E5 ;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    
+    
+
+}
+.wood-venner-text h2,.p{
+    width: 50%;
+    text-align: center;
+    line-height: 1.6;
+    color: #2d0506;
+    font-family: var(--primary-font);
+    letter-spacing: 1px;
+}
+.wood-venner-text h2{
+    font-size: 2.2rem;
+
+}
+.wood-veneers p{
+    font-size: 1.2rem;
+    /* margin-top: 20px; */
+}
+.wood-veneers .wood-venner-text a{
+ padding: 10px 30px;
+ border: none;
+ background-color: var(--primary-color);
+ color:cornsilk;
+ font-weight: var(--font-weight);
+ font-family: var(--primary-font);
+ margin-left: 130px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 30%;
+ border-radius: 20px;
+
+ cursor: pointer !important;
+ font-size: 1.2rem;
+}
+.wood-veneers .wood-venner-img {
+    position: absolute;
+    /* width: 100%; */
+    height: 600px;
+    right: 10px;
+    top: -5%;
+}
+
+/* veneer variants */
+.veneer-variants{
+    margin: 3rem 0;
+}
+.veneer-variants h2{
+    text-align: center;
+    position: relative;
+    font-family: var(--primary-font);
+    font-size: 2.5rem;
+   
+    
+}
+.veneer-variants h2::after{
+    position: absolute;
+    width: 20%;
+   
+    
+    height: 4px;
+    /* background-size: 100% 2px; */
+    bottom: -8px;
+    background-image: linear-gradient(to right, var(--primary-color), var(--wood-color));
+    left: 50%;
+    margin-left: -10%;
+    content: '';
+}
+.veneer-variants .veneer-1{
+    padding: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.veneer-1 .veneer-text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+   
+    justify-content: center;
+}
+.veneer-1 .veneer-text h2{
+    font-family: var(--primary-font); 
+    color: var(--primary-color);
+}
+.veneer-1 .veneer-text p{
+    font-family:var(--primary-font);
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+.veneer-variants .veneer-1 .venner-img img{
+height: 300px;
+object-fit: contain;
+}
+/* veneer-2 */
+.veneer-variants .veneer-2{
+    padding: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.veneer-2 .veneer-text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+   
+
+}
+.veneer-2 .veneer-text h2{
+    font-family: var(--primary-font); 
+    color: var(--primary-color);
+}
+.veneer-2 .veneer-text p{
+    font-family:var(--primary-font);
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+.veneer-variants .veneer-2 .venner-img img{
+    height: 300px;
+    object-fit: contain;
+    }
+
+    /* veneer-3 */
+    .veneer-variants .veneer-3{
+        padding: 70px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .veneer-3 .veneer-text{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+       
+    
+    }
+    .veneer-3 .veneer-text h2{
+        font-family: var(--primary-font); 
+        color: var(--primary-color);
+    }
+    .veneer-3 .veneer-text p{
+        font-family:var(--primary-font);
+        letter-spacing: 2px;
+        line-height: 1.5;
+    }
+    .veneer-variants .veneer-3 .venner-img img{
+        height: 300px;
+        object-fit: contain;
+}   
+
+/* veneer-4 */
+.veneer-variants .veneer-4{
+    padding: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.veneer-4 .veneer-text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+   
+
+}
+.veneer-4 .veneer-text h2{
+    font-family: var(--primary-font); 
+    color: var(--primary-color);
+}
+.veneer-4 .veneer-text p{
+    font-family:var(--primary-font);
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+.veneer-variants .veneer-4 .venner-img img{
+    height: 300px;
+    object-fit: contain;
+}
+
+/* veneer-5 */
+.veneer-variants .veneer-5{
+    padding: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.veneer-5 .veneer-text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+   
+
+}
+.veneer-5 .veneer-text h2{
+    font-family: var(--primary-font); 
+    color: var(--primary-color);
+}
+.veneer-5 .veneer-text p{
+    font-family:var(--primary-font);
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+.veneer-variants .veneer-5 .venner-img img{
+    height: 300px;
+    object-fit: contain;
+    }
+
+/* HOT-PRODUCTS */
+.hot-products h2{
+ text-align: center;
+ font-family: var(--primary-font);
+ font-size: 2.5rem ;
+ background: -webkit-linear-gradient(var(--primary-color),var(--wood-color));
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+
+}
+.hot-products{
+    position: relative;
+    transition: all;
+    
+   
+}
+
+.hot-products .hot-container{
+    display: flex;
+    margin: 100px 15px;
+    justify-content: space-around;
+    column-gap: 10px;
+}
+.hot-container img{
+    height: 500px;
+}
+
+/* HOT-PRODUCT-1 */
+.hot-product-1{
+    border: 0.5px solid #000;
+}
+.hot-product-1 figcaption{
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: 1.3rem;
+}
+.hot-product-1 .hot-btn button{
+    padding: 20px ;
+   
+    margin: 20px 0;
+    font-family: var(--primary-font);
+    font-size: 1.3rem;
+    border: none;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 100%;
+    background-image: linear-gradient(to right,var(--primary-color),var(--wood-color));
+}
+.hot-product-1 .hot-btn a{
+    color: var(--secondary-color);
+}
+
+.hot-product-2{
+    border: 0.5px solid #000;
+}
+.hot-product-2 figcaption{
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: 1.3rem;
+}
+.hot-product-2 .hot-btn-2 button{
+    padding: 20px ;
+   
+    margin: 20px 0;
+    font-family: var(--primary-font);
+    font-size: 1.3rem;
+    border: none;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 100%;
+    background-image: linear-gradient(to right,var(--primary-color),var(--wood-color));
+}
+.hot-product-2 .hot-btn-2 a{
+    color: var(--secondary-color);
+}
+
+.hot-product-3{
+    border: 0.5px solid #000;
+
+}
+.hot-product-3 figcaption{
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: 1.3rem;
+}
+.hot-product-3 .hot-btn button{
+    padding: 20px ;
+   
+    margin: 20px 0;
+    font-family: var(--primary-font);
+    font-size: 1.3rem;
+    border: none;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 100%;
+    background-image: linear-gradient(to right,var(--primary-color),var(--wood-color));
+}
+.hot-product-3 .hot-btn a{
+    color: var(--secondary-color);
+}
+
+.hot-product-4{
+    border: 0.5px solid #000;
+}
+.hot-product-4 figcaption{
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: 1.3rem;
+}
+.hot-product-4 .hot-btn button{
+    padding: 20px ;
+   
+    margin: 20px 0;
+    font-family: var(--primary-font);
+    font-size: 1.3rem;
+    border: none;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 100%;
+    background-image: linear-gradient(to right,var(--primary-color),var(--wood-color));
+}
+.hot-product-4 .hot-btn a{
+    color: var(--secondary-color);
+}
+.hot-product-1,
+.hot-product-2,
+.hot-product-3,
+.hot-product-4{
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-color: var(--primary-color);
+}
+/* footer */
+footer{
+    margin-top: 10rem ;
+    font-family: var(--primary-font);
+    background-color: #353535;
+    display: flex;
+    padding: 20px;
+    height: auto;
+    align-items: baseline;
+    color:var(--secondary-color) ;
+    justify-content: space-around;
+
+}
+footer img{
+    height: 100px;
+    width: 100px !important;
+}
+footer .first{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+   
+   
+}
+footer .first span{
+    font-weight: bold;
+   letter-spacing: 1px;
+}
+footer .second{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 20px;
+}
+footer .second a{
+    color: var(--secondary-color);
+}
+footer .second a:hover{
+    color: #4E9F3D;
+    transition: all 0.5s;
+}
+footer .fourth{
+    text-align: center;
+   
+}
+footer .fourth h2{
+    margin-bottom: 20px;
+}
+footer .fourth a{
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    margin:  5px;
+  
+  
+    border: 0.001px solid var(--secondary-color);
+    padding: 3px 5px;
+    border-radius: 3px;
+    text-align: center;
+}
+footer .fourth a:hover{
+    background-color: #4E9F3D;
+    transition: 0.6s all;
+}
+
